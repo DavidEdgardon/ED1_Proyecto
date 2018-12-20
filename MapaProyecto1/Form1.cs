@@ -339,6 +339,7 @@ namespace MapaProyecto1
                 }
 
             }
+                   //dt.Clear();
 
         }
 
