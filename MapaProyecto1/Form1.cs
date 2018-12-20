@@ -333,8 +333,7 @@ namespace MapaProyecto1
                 if (dataGridView1.Rows[i].Cells[0].Value.ToString() == codigo)
 
                 {
-                   // BackEnd.Editaraeropuerto(codigo, nuevo, Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value), Convert.ToDouble(dataGridView1.Rows[i].Cells[1].Value), dataGridView1.Rows[i].Cells[3].Value.ToString());
-
+                   BackEnd.EditarLugares(codigo, nuevo, Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value), Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value));
 
                 }
 
@@ -367,8 +366,7 @@ namespace MapaProyecto1
 
                 {
 
-                //   BackEnd.EditarRuta(codigo, nuevo, dataGridView2.Rows[i].Cells[2].Value.ToString(), dataGridView2.Rows[i].Cells[1].Value.ToString(), Convert.ToDouble(dataGridView2.Rows[i].Cells[3].Value));
-
+                    BackEnd.EditarRuta(codigo, nuevo, dataGridView2.Rows[i].Cells[2].Value.ToString(), dataGridView2.Rows[i].Cells[1].Value.ToString(), Convert.ToDouble( dataGridView2.Rows[i].Cells[3].Value));
 
                 }
 
@@ -394,7 +392,7 @@ namespace MapaProyecto1
                 MessageBox.Show("Ingrese Datos!");
                 return;
             }
-           // BackEnd.EliminarRuta(codigo);
+           BackEnd.EliminarRuta(codigo);
 
             dataGridView2.Rows.RemoveAt(filaSeleccionada); //REMOVER DE LA TABLAS
 
